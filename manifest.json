@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Sample pluguin",
+    "description": "This is a sample plugin for learning.",
+    "version": "1.0",
+    "action": {
+        "default_popup": "index.html"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/patch.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ],
+    "background": {
+        "service_worker": "./sw/service_worker.js",
+        "type": "module"
+    }
+}

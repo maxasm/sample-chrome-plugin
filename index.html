@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Browser Plugin</title>
+    <script src="./app.js" defer></script>
+    <style>
+        html,
+        body {
+            min-width: 400px;
+            /* min-height: 500px; */
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container > * {
+            margin: 10px;
+            padding: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>File downloader</h1>
+        <input type="text" name="file-link" id="inp-file-link">
+        <button>Download File</button>
+    </div>
+</body>
+
+</html>
